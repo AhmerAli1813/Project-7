@@ -1,0 +1,67 @@
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    
+    /* Modify the appearance of the slider thumb */
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb,
+    .seek_slider1::-webkit-slider-thumb,
+    .volume_slider1::-webkit-slider-thumb ,
+    .seek_slider2::-webkit-slider-thumb,
+    .volume_slider3::-webkit-slider-thumb  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+    border-radius: 50%;
+    }
+    
+    /* Change the opacity when mouse is hovered */
+    .seek_slider:hover,
+    .volume_slider:hover ,
+    .seek_slider1:hover,
+    .volume_slider1:hover
+    ,.seek_slider2:hover,
+    .volume_slider2:hover
+     {
+        
+    opacity: 1.0;
+    }
+    
+    .seek_slider , .seek_slider1 , .seek_slider2 {
+    width: 60%;
+    }
+    
+    .volume_slider ,.volume_slider1 ,.volume_slider2 {
+    width: 30%;
+    }
+    
+    .current-time,
+    .total-duration {
+    padding: 10px;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+    padding: 10px;
+    }
+    
+    /* Change the mouse cursor to a pointer
+    when hovered over */
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward {
+    cursor: pointer;
+    }
+    

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="js/main.js">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+<link rel="stylesheet" href="bootstrap/bootstap.jquries.js">
+    <style>
+
+        body{
+
+            display: grid;
+
+            place-items: center;
+
+            height: 100vh;
+
+            width: 100%;
+
+            background-color: gray;
+
+        }
+
+        input , button , a{
+
+            text-decoration: none;
+
+            background-color: rgb(214, 190, 236);
+
+            padding: 12px 15px ;
+
+        }
+
+        a{
+
+            color: black;
+
+        }
+
+       #box{
+
+           width: 750px;
+
+           height: 750px;
+
+           margin-top: 50px;
+
+           background-color: bisque;
+
+           position: relative;
+
+           display: grid;
+
+           place-items: center;
+
+       }
+
+</style>
+
+    <script>
+
+function  Search(){
+    let Search = document.getElementById("mysearch").value;
+switch (Search){
+    case 'jazz':
+        window.location.href="jazz.html";
+        break;
+        case 'rock':
+        window.location.href="rock.html";
+        break;
+        case 'pops':
+        window.location.href="pops.html";
+        break;
+        case 'classical ':
+        window.location.href="classical.html";
+        break;
+        case 'amrinder ':
+        window.location.href="gill.html";
+        break;
+        case 'atif aslam ':
+        window.location.href="atif.html";
+        break;
+        case 'nusrat ':
+        window.location.href="nusrat.html";
+        break;
+        case 'aima ':
+        window.location.href="Aima.html";
+        break;
+        case 'atif information ':
+        window.location.href="atif-info.html";
+        break;
+        case 'amrinder gill information ':
+        window.location.href="gill-info.html";
+        break;
+        case 'aima biag information ':
+        window.location.href="aima-info.html";
+        break;
+        case 'nusrat ali khan information ':
+        window.location.href="nurat.info.html";
+        break;
+        default:
+            alert("sorry We are not aligiable")
+            break;
+    }
+}
+
+
+function sign(){
+    
+var useremail = document.querySelector('#email').value;
+var userpass = document.querySelector('#password').value;
+var comfirmepass = document.querySelector('#comfirm-pass').value;
+if(userpass == comfirmepass){
+
+    var obj = {
+
+name:useremail,
+
+password:userpass
+
+
+
+}
+
+console.log(obj);
+
+var stroage = window.localStorage.setItem("userInfo",JSON.stringify(obj));
+
+
+function login(){
+            alert("")
+            let  loginemail = document.getElementById('loginemail').value;
+            let loginpass = document.getElementById('loginpass').value;
+            var box = document.getElementById("box");
+
+       
+            if( stroage!=""){
+if(loginemail == name & loginpass == password){
+
+            var file = document.getElementById("downTage");
+            file = document.createElement('a');
+            
+      var linkText = document.createTextNode("Download");
+      
+      file.appendChild(linkText);
+
+      file.title = "Download";
+
+      file.href = "Download file text check   1 01.docx";
+      
+      document.body.appendChild(file);
+      
+    }
+    
+    else{
+        
+        alert("login First")
+        
+    }
+    
+}
+        }
+    
+ }else {
+     alert('worng pass');
+ }
+ 
+ 
+
+
+}
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="">
+
+
+
+        <input type="text" id="loginemail"   placeholder="Email " >
+
+        <input type="text" id="loginpass"  placeholder="Password">
+
+        <button id="mylogin" onclick="login()"  > Login</button>
+    </div>
+        <div id="box">
+
+            <form action="" class="form">
+                <div class="form-group ">
+
+                        <label for=""> Name </label> <br>
+                        <input type="text" id="input" placeholder="Name" class="form-control">    
+                </div>
+  
+                <div class="form-group">
+                    <label for=""> Eamil </label>
+                    <input type="text" id="email" placeholder="Enter Your Email" class="form-control">
+        
+                </div>
+                
+                <div class="form-group">
+                    <label for=""> Password</label>
+                    <input type="password"   id="password" class="form-control" placeholder="Create Password" >
+                </div>
+                <div class="form-group">
+                    <label for="">Comfirm Password</label>
+                    <input type="password"   id="comfirm-pass" class="form-control" placeholder="Comfirm Password" >
+                </div>
+        <a class="btn btn-outline-danger w-100"  onclick="sign()" >Sign Us</a>
+            </form>
+
+        <input type="search" name="" id="mysearch" placeholder="search">
+
+        <button onclick="Search()">Search</button>
+
+    </div>
+
+</body>
+</html>

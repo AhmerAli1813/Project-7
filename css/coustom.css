@@ -1,0 +1,436 @@
+/* coustom Css  */
+/* ribbon Shadow margin start here  */
+.margin{
+    margin-top:50px;
+}
+.m-bottom{
+    margin-bottom: 30px;
+}
+.m-bottom-10{
+    margin-bottom: 15px;
+    
+}
+
+.extra-margin{
+margin-bottom:55px ;
+}
+.heading span{
+color: gray;
+position: relative;
+}
+.heading span::before{
+    content: "";
+    position: absolute;
+    width:  100px;
+    height: 5px;
+    background-color: var(--dk-red);
+    bottom: 0;
+    left: 200%;
+}
+.border{
+    border: 1px solid black;
+}
+.btn:focus{
+    box-shadow: 1px 5px 10px var(--lg-red) inset , -1px -5px 10px var(--lg-red) inset;
+}
+i{
+    color: gray;
+}
+i:hover{
+    color: white;
+}
+.shadow-out{
+box-shadow: 0px 5px 15px rgba(0,0,0,0.5) , -5px 0px 8px rgba(0,0,0,0.5);
+}
+
+.ribbon{
+    width: 95%;
+    height: 50px;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    background-color: red;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ribbon::before{
+content: "";
+position: absolute;
+width: 25px;
+height: 30px;
+background-color: rgb(245, 12, 12);
+right: 0;
+bottom: 0;
+transform: translate( -0% , 100%);
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+.ribbon::after{
+content: "";
+position: absolute;
+width: 15px;
+height: 25px;
+background-color: red;
+right: 0;
+bottom: 0;
+transform: translate( 0% , 50%);
+}
+
+.shahdow{
+    position: absolute;
+width: 150px;
+height: 150px ;
+top: -10px;
+left: -10px;
+/* background-color: blue; */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 4;
+overflow: hidden;
+transform: translate(-7% , 0);
+}
+.shahdow::before{
+content: "Best Albums";
+position: absolute;
+width: 150%;
+height: 50px;
+transform: rotate(-45deg) translateY(-25px);
+background-color: var(--dk-red);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+z-index: 1;
+font-weight: 300;
+letter-spacing: 2px;
+
+}
+.shahdow::after{
+content: "";
+position: absolute;
+width: 20px;
+height: 20px;
+z-index: -2;
+bottom: 0;
+left: 0;
+background-color: var(--dk-red);
+box-shadow: 140px  -140px 1px var(--dk-red);
+}
+/* ribbon Shadow margin start here  */
+
+/* contact Page start */
+    .cont-icons{
+        height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .cont-icons-img{
+        width: 75px;
+        height: 75px;
+        border: 2px solid red;
+        border-bottom: none;
+        border-radius: 50%;
+        transition: 0.5s;
+        display: grid;
+        place-items:center ;
+        position: absolute;
+        top: 0;
+    }
+    .cont-icons:hover .cont-icons-img{
+        background-color: red;
+    }
+    .cont-icons-img i{
+        font-size: 18px;
+    }
+    .cont-icons:hover i{
+        transform: scale(1.1);
+        color: white;
+    }
+    .cont-icons-txt{
+ position: absolute;
+ bottom: 0;
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        
+    }
+    .cont-left{
+        height: 550px;
+    background: url(../img/white4.jpg) 0 0 no-repeat;
+    background-position: center;
+    background-size: cover;
+
+        
+    }
+    form{
+        text-align: left;
+    }
+    .my-form-group{
+        height: 70px;
+     
+        display: flex;
+      
+    }
+    #input , #compass , #pass , #email{
+        border: none !important;
+        border-bottom: 2px solid gray !important;
+  color: red;
+}
+input[type="text"]:focus  , #compass:focus , #pass:focus , #email:focus{
+    box-shadow: 0 1px 1px red  inset , 0 0 8px red !important;
+}
+
+    .cont-right{
+        height: 550px;
+        background-color: red;
+        padding: 0;
+    }
+    .cont-right img{
+        width: 100%;
+        height: 100%;
+    }
+    /* contact page End */
+    /* info page Start */
+    
+    .info-left-box{
+        height: 500px;
+        background: url(../img/singers/atif/atif-15.jpg) 0 0 no-repeat ;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        position: relative;
+        padding: 0;
+    }
+    .info-left-box::before
+    {
+        content: "";
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.711);
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    }
+    .info-right-box{
+        height: 500px;
+        background: url(img/white2.jpg) 0 0 no-repeat ;
+        background-size: cover;
+        background-position: center;
+        
+        /* background-color: red; */
+    }
+    .info-right-box img , .info-left-box img{
+        width: 100%;
+        height: 100%;
+    }
+    .info-right-box .info{
+        width: 100%;
+        height: 50px;
+        background-color:lightgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    
+    }
+    .info-right-box .info span{
+    color: gray;
+    text-align: left;
+    margin-right:10px ;
+    
+    }
+    .info-right-box .info i{
+    color:red;
+    font-size: 18px;
+    }
+    /* infomation end Here */
+    /* About Page start */
+    .about-div{
+        height: 300px;
+        box-shadow: 2px 5px 25px rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 5;
+    }
+    .about-icons{
+        position: absolute;
+        content: "";
+        width: 75px;
+        height: 75px;
+        background-color: white;
+        top: -10%;
+        left: -10%;
+        box-shadow: 2px 5px 8px rgba(0,0,0,0.5) , -2px -5px 20px rgba(0,0,0,0.5);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-icons i{
+        font-size: 25px;
+        color: red;
+    }
+.about-div h5 {
+   margin-top: 15px;
+}
+.about-box1 {
+height: 250px;
+padding: 0;
+position: relative;
+
+
+}
+.about-box2 {
+   height: 250px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.about-box2::before{
+content: "";
+position: absolute;
+width: 30%;
+height: 30%;
+border-top: 2px solid red;
+border-left: 2px solid red;
+top: 0;
+left: 0;
+}
+
+.about-box2::after{
+content: "";
+position: absolute;
+width: 30%;
+height: 30%;
+border-bottom: 2px solid red;
+border-right: 2px solid red;
+bottom:  0;
+right: 0;
+}
+.about-box1 img{
+   width: 100%;
+   height: 100%;
+}
+.about-box1::before{
+content: "";
+position: absolute;
+width: 40%;
+height: 40%;
+clip-path: polygon(100% 0 , 100% 100% , 0 100%);
+background-color: white;
+bottom: 5%;
+right: 0%;
+transform: translate(-0%, 12%);
+}
+.about-socail-icons{
+   float: left !important;
+   position: absolute;
+   bottom: 0;
+}
+    /* About Page End  */
+    /* Gallery Page start Here */
+    .gallery-items{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .gallery-opt{
+        text-align: center;
+        padding: 12px 15px;
+        width: 100px ;
+        transition: 0.5s;
+    }
+    .gallery-active{
+        background-color: red;
+     
+        color: white;
+
+    }
+    .gallery-opt:hover{
+        background-color: red;
+  
+        color: white;
+
+    }
+    /* Gallery End here */
+    /* Counter value */
+     .main {
+     width: 200px;
+        height: 200px;
+    display: grid;
+    place-items: center;
+    }
+    
+    .counter{
+        color: var(--danger);
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        padding: 28px 13px 0;
+        margin: 20px auto 0;
+        border-radius: 50%;
+        border: 8px solid var(--danger);
+        border-bottom-color: transparent ;
+        position: relative;
+        z-index: 1;
+        
+        
+    }
+.counter:hover i{
+    color: red;
+}
+    
+    .counter::before,
+    .counter::after{
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 20px -5px rgba(0 ,0 , 0, 0.5) ;
+        left: 8px;
+        right: 8px;
+        top: 8px;
+        bottom: 8px;
+        z-index: -1;
+    }
+    .counter::before{
+        background-color: transparent;
+        height: 27px;
+        width: 27px;
+        border: 8px solid var(--danger);
+        top: -27px;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        margin: 0 auto;
+        animation: rotate 2s ease 0.4s 1;
+    }
+    .counter h3{
+        /* font-size: 20px; */
+        font-weight: 300px;
+    }
+    .counter .counter-icon i{
+        font-size: 25px;
+        margin: 0 0 10px;
+    }
+    .counter .counter-value{
+        /* font-size: 25px; */
+        display: block;
+        font-weight: 700;
+    }

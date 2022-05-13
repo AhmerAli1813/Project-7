@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music World</title>
+
+<!-- bootstap files start -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+  <!-- bootstap files end -->
+  <!-- fontAwseom start -->
+  <script src="https://kit.fontawesome.com/d5e21ef224.js" crossorigin="anonymous"></script>
+  <!-- fontAwseom end -->
+ 
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="font/css/all.min.css">
+
+    <link rel="stylesheet" href="css/coustom.css">
+
+    
+
+
+
+    
+
+</head>
+
+<body>
+
+          
+
+
+
+<section class="container-fliud  margin ">
+
+            
+
+            <div class="container  py-5 ">
+
+                <div class=" row head ">
+
+                    <div class="col-md-2 logo ">
+
+                        <img src="img/logo.png" alt="">
+
+                    </div>
+
+                    <div class="col-md-10 nav  ">
+
+                        
+
+                        <div class="col-12  up-head">
+
+                            <div class="row">
+
+
+
+                                <div class="col-7 d-none d-md-block">
+
+                                
+
+                                    <form action="" class="form-inline">
+
+                                        <input type="search" placeholder="Search here" class="form-control w-1oo">
+
+                                        <a role="button" onclick="Search()" id="searchbtn" class="btn btn-outline-secondary"><i class="fas fa-search"></i></a>
+
+                                    </form>
+
+                                </div>
+
+                                    <div class="col-5  d-flex justify-content-md-end justify-content-space  ">
+
+                                        <a href=""  class="nav-link  social text-white"><i class="fab fa-instagram"></i></a>
+
+                                        <a href="" class="nav-link social text-white"><i class="fas fa-envelope"></i></a>
+
+                                        <a href=""  class="nav-link social  text-white"><i class="fab fa-facebook"></i></a>
+
+                                        <a href="" class="nav-link  social text-white active"><i class="fas mx-1 fa-user"></i></a>
+
+                                        
+
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 down-head">
+
+                            <nav class="navbar navbar-dark    navbar-expand-md"  >
+
+                                <div class="collapse col-md-10 navbar-collapse    "   id="mynavbar2">
+
+                                    <ul  class="nav  navbar-nav h-auto">
+
+                                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+
+                                        <li class="nav-item dropdown">
+
+                                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" >Feature</a>
+
+                                        
+
+                                            <div class="dropdown-menu">
+
+                                                <a href="rock.html" class="dropdown-item amination1">Rock</a>
+
+                                                <a href="pops.html" class="dropdown-item amination2">Pops</a>
+
+                                                <a href="jazz.html" class="dropdown-item amination3">Jazz</a>
+
+                                                <a href="classical.html" class="dropdown-item amination4">Calssical</a>
+
+                                            </div>
+
+                
+
+    
+
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+
+                                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" >Artist</a>
+
+                                        
+
+                                            <div class="dropdown-menu">
+
+                                                <a href="gill.html" class="dropdown-item amination1">Amrinder Gill</a>
+
+                                                <a href="atif.html" class="dropdown-item amination2">Atif Aslam</a>
+
+                                                <a href="Aima.html" class="dropdown-item amination3">Aima Biag</a>
+
+                                                <a href="nusrat.html" class="dropdown-item amination4">Nusrat Fethe Ali Kahn</a>
+
+                                            </div>
+
+                                        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+
+                                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+
+                                        <li class="nav-item"><a href="contactus.html" class="nav-link">Conatct Us</a></li>
+
+                                    </ul> 
+
+                                    
+
+                                </div>
+
+                                    
+
+                        
+
+                        <button type="button" class="navbar-toggler mx-md-none mx-auto " data-toggle="collapse" data-target="#mynavbar2"> 
+
+                            <span class="navbar-toggler-icon"></span>
+
+                            </button>
+
+                            </nav>
+
+                                            
+
+                                    
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="myslider" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+
+                <li data-target="#myslider" data-slide-to="0" class="active"></li>
+
+                <li data-target="#myslider" data-slide-to="1"></li>
+
+                <li data-target="#myslider" data-slide-to="2"></li>
+
+                </ol>
+
+                <div class="carousel-inner">
+
+                <div class="carousel-item   active" style="  background: url(img/slider/b-slide-4.jpg);" >
+
+                    <img class="d-block   w-100"  src="img/slider/slider-8.png" alt="First slide">
+
+                    
+
+                     <div class="carousel-caption d-none d-md-block  headline">
+
+                            
+
+                        <h3 class="heading" >Fisrt Slider </h3>
+
+                        <p class="heading-para"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Nesciunt natus, magnam, temporibus amet <br> molestiae, nobis quos <br>te consectetur sit  </p>
+
+                                <a href="" class="btn sliderbtn1  btn-default">Buy Ticket NOw</a>    
+
+                                <a href="" class="btn sliderbtn2  btn-default">check our album</a>    
+
+                            
+
+                                </div> 
+
+                                <div class="carousel-caption" style="bottom: 0;">
+
+                                    <div class="row audio-cap">
+
+                                        <div class="col-md-7  col-12 audio-img">
+
+                                            <div class="img"><img src="img/girl.jpg" alt=""></div>
+
+                                            <div class="img-caption">
+
+                                                <h5 style="color: gray;">Dj Lozak promo mix soundwave</h5>
+
+                                                <small style="color: var(--lg-red);">Leona</small>
+
+                                            </div>
+
+                                            </div>
+
+                                            <div class="col-md-5 audio-div col-12">
+
+                                                <div class="music-icons">
+
+                                                    <div class="slider_container">
+
+                                                        <input type="range" min="1" max="100"
+
+                                                        value="0" class="seek_slider" onchange="seekTo()">
+
+                                        
+
+                                                        <div class="single">
+
+                                                            <div class="current-time">00:00</div>
+
+                                                            <span class="prev-track" onclick="prevTrack()">
+
+                                                                <i class="fa fa-step-backward "></i>
+
+                                                             </span>
+
+                                                             <span class="playpause-track" onclick="playpauseTrack()">
+
+                                                                <i id="play-icons" onclick="music()" class="fa fa-play-circle " ></i>
+
+                                                            </span>
+
+                                                             <span class="next-track" onclick="nextTrack()">
+
+                                                                <i class="fa fa-step-forward "></i>
+
+                                                            </span>
+
+                                                           
+
+                                                            <div class="total-duration">00:00</div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                  
+
+                                                </div>
+
+                                                    <audio id="song" src="audio/Kun.mp3" style="display: none;" ></audio>
+
+
+
+                                                </div>
+
+                                </div>
+
+                                    </div>
+
+                </div>
+
+                <div class="carousel-item   Second" style="  background: url(img/slider/b-slide-4.jpg);" >
+
+                    <img class="d-block   w-100"  src="img/slider/slider-9.png" alt="First slide">
+
+                    
+
+                     <div class="carousel-caption d-none d-md-block  headline">
+
+                            
+
+                        <h3 class="heading" >Second Slider </h3>
+
+                        <p class="heading-para"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Nesciunt natus, magnam, temporibus amet <br> molestiae, nobis quos <br>te consectetur sit  </p>
+
+                                <a href="" class="btn sliderbtn1  btn-default">Buy Ticket NOw</a>    
+
+                                <a href="" class="btn sliderbtn2  btn-default">check our album</a>    
+
+                            
+
+                                </div> 
+
+                                <div class="carousel-caption" style="bottom: 0;">
+
+                                    <div class="row audio-cap">
+
+                                        <div class="col-md-7  col-12 audio-img">
+
+                                            <div class="img"><img src="img/girl.jpg" alt=""></div>
+
+                                            <div class="img-caption">
+
+                                                <h5 style="color: gray;">Dj Lozak promo mix soundwave</h5>
+
+                                                <small style="color: var(--lg-red);">Leona</small>
+
+                                            </div>
+
+                                            </div>
+
+                                            <div class="col-md-5 audio-div col-12">
+
+                                                <div class="music-icons">
+
+                                                    <div class="slider_container">
+
+                                                        <input type="range" min="1" max="100"
+
+                                                        value="0" class="seek_slider" onchange="seekTo()">
+
+                                        
+
+                                                        <div class="single">
+
+                                                            <div class="current-time">00:00</div>
+
+                                                            <span class="prev-track" onclick="prevTrack(this)">
+
+                                                                <i class="fa fa-step-backward "></i>
+
+                                                             </span>
+
+                                                             <span class="playpause-track" onclick="playpauseTrack()">
+
+                                                                <i id="play-icons" onclick="music()" class="fa fa-play-circle " ></i>
+
+                                                            </span>
+
+                                                             <span class="next-track" onclick="nextTrack(this)">
+
+                                                                <i class="fa fa-step-forward "></i>
+
+                                                            </span>
+
+                                                           
+
+                                                            <div class="total-duration">00:00</div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                  
+
+                                                </div>
+
+                                                    <audio id="song" src="audio/Kun.mp3" style="display: none;" ></audio>
+
+
+
+                                                </div>
+
+                                </div>
+
+                                    </div>
+
+                </div>
+
+                <div class="carousel-item   " style="  background: url(img/slider/b-slide-4.jpg);" >
+
+                    <img class="d-block   w-100"  src="img/slider/Slider-11.png" alt="First slide">
+
+                    
+
+                     <div class="carousel-caption d-none d-md-block  headline">
+
+                            
+
+                        <h3 class="heading" >Third Slider </h3>
+
+                        <p class="heading-para"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Nesciunt natus, magnam, temporibus amet <br> molestiae, nobis quos <br>te consectetur sit  </p>
+
+                                <a href="" class="btn sliderbtn1  btn-default">Buy Ticket NOw</a>    
+
+                                <a href="" class="btn sliderbtn2  btn-default">check our album</a>    
+
+                            
+
+                                </div> 
+
+                                <div class="carousel-caption" style="bottom: 0;">
+
+                                    <div class="row audio-cap">
+
+                                        <div class="col-md-7  col-12 audio-img">
+
+                                            <div class="img"><img src="img/girl.jpg" alt=""></div>
+
+                                            <div class="img-caption">
+
+                                                <h5 style="color: gray;">Dj Lozak promo mix soundwave</h5>
+
+                                                <small style="color: var(--lg-red);">Leona</small>
+
+                                            </div>
+
+                                            </div>
+
+                                            <div class="col-md-5 audio-div col-12">
+
+                                                <div class="music-icons">
+
+                                                    <div class="slider_container">
+
+                                                        <input type="range" min="1" max="100"
+
+                                                        value="0" class="seek_slider" onchange="seekTo()">
+
+                                        
+
+                                                        <div class="single">
+
+                                                            <div class="current-time">00:00</div>
+
+                                                            <span class="prev-track" onclick="prevTrack(this)">
+
+                                                                <i class="fa fa-step-backward "></i>
+
+                                                             </span>
+
+                                                             <span class="playpause-track" onclick="playpauseTrack()">
+
+                                                                <i id="play-icons" onclick="music()" class="fa fa-play-circle " ></i>
+
+                                                            </span>
+
+                                                             <span class="next-track" onclick="nextTrack(this)">
+
+                                                                <i class="fa fa-step-forward "></i>
+
+                                                            </span>
+
+                                                           
+
+                                                            <div class="total-duration">00:00</div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                  
+
+                                                </div>
+
+                                                    <audio id="song" src="audio/Kun.mp3" style="display: none;" ></audio>
+
+
+
+                                                </div>
+
+                                </div>
+
+                                    </div>
+
+                </div>
+
+                </div>
+
+            
+
+                <a class="carousel-control-prev" href="#myslider" role="button" data-slide="prev">
+
+                <span class="carousel-control-prev-icon" ></span>
+
+                
+
+                </a>
+
+                <a class="carousel-control-next" href="#myslider" role="button" data-slide="next">
+
+                <span class="carousel-control-next-icon" >
+
+                
+
+                </a>
+
+            </div>
+
+      
+
+</section>
+
+<section class="container mt-5">
+
+    <h2 class="text-center heading extra-margin"><span>Our</span>  Services </h2>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-5  col-sm-6">
+
+            <div class="about-div">
+
+<div class="about-icons">
+
+    <i class="fas fa-music"></i>
+
+</div>
+
+                <h5 class="mb-2">We Have 145 Over Songs</h5>
+
+                
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, tenetur. Lorem ipsum dolor sit amet t tenetur porro.</p>
+
+                <button class="btn btn-outline-danger d-block-w-100"> Read More </button>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-5  col-sm-6">
+
+            <div class="about-div">
+
+
+
+<div class="about-icons m-bottom-10 ">
+
+    <i class="fas fa-compact-disc"></i>
+
+</div>
+
+                <h5 class=" mb-2">We Have 145 Over Songs</h5>
+
+                
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, tenetur. Lorem ipsum dolor sit amet t tenetur porro.</p>
+
+                <button class="btn btn-outline-danger d-block-w-100"> Read More </button>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-5  col-sm-6">
+
+            <div class="about-div">
+
+<div class="about-icons">
+
+    <i class="fab fa-napster"></i>
+
+</div>
+
+                <h5 class="mb-2">23 Times in Top10 UK </h5>
+
+                
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, tenetur. Lorem ipsum dolor sit amet t tenetur porro.</p>
+
+                <button class="btn btn-outline-danger d-block-w-100"> Read More </button>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-5  col-sm-6">
+
+            <div class="about-div">
+
+<div class="about-icons">
+
+    <i class="fas fa-microphone"></i>
+
+</div>
+
+                <h5 class="mb-2">Live Performances</h5>
+
+                
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, tenetur. Lorem ipsum dolor sit amet t tenetur porro.</p>
+
+                <button class="btn btn-outline-danger d-block-w-100"> Read More </button>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-5  col-sm-6">
+
+            <div class="about-div">
+
+<div class="about-icons">
+
+    <i class="fab fa-soundcloud"></i>
+
+</div>
+
+                <h5 class="mb-2">We Peovide The Best </h5>
+
+                
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, tenetur. Lorem ipsum dolor sit amet t tenetur porro.</p>
+
+                <button class="btn btn-outline-danger d-block-w-100"> Read More </button>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="col-md-4 mb-5  col-sm-6">
+
+            <div class="about-div">
+
+<div class="about-icons">
+
+    <i class="fas fa-headphones"></i>
+
+</div>
+
+                <h5 class="mb-2">We Have 45 Over Albums</h5>
+
+                
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, tenetur. Lorem ipsum dolor sit amet t tenetur porro.</p>
+
+                <button class="btn btn-outline-danger d-block-w-100"> Read More </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container  margin " >
+
+<div class="row">
+
+    <div class="col-md-6 col-12  about-box1">
+
+        <img src="img/3.jpg" alt="">
+
+    </div>
+
+    <div class="col-md-6 col-12 about-box2">
+
+        <h3 class="mt-2"> Our Live Performances </h3>
+
+        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto aut excepturi earum cupiditate at, doloribus repellendus nihil facere maxime.</p>
+
+        <div class="about-socail-icons">
+
+            <i class="fab fa-facebook-f"></i>
+
+            <i class="fab fa-twitter"></i>
+
+            <i class="fab fa-youtube-square"></i>
+
+            <i class="fab fa-soundcloud"></i>
+
+        </div>
+
+    </div>
+
+</div>    
+
+
+
+</section>
+
+<footer  class="container margin">
+
+    <div class="container py-3 ">
+
+        <div class="row">
+
+<div class="col-3 logo m-bottom">  <img src="img/logo.png" alt=""></div>
+
+            <div class="col-7 fo-email d-none d-md-block"  style="background: var(--lh-black);">
+
+            <form action="" class="form-inline">
+
+                <input type="search" class="form-control" placeholder="Enter Your Eamil" name="" id="">
+
+            <button class="btn btn-outline-danger"> <i class="fab fa-telegram"></i>Subscribe</button>
+
+            </form>
+
+  
+
+            </div>
+
+                </div>
+
+        </div>
+
+      <div class="row">
+
+        <div class="col-md-4  footerbox">
+
+          <h5 class="text-center fo-heading m-bottom" >THIS WEAK'S TRACKS</h5>
+
+        <ul>
+
+         <li class="fo-sup m-bottom-10">
+
+             <div class="num">1</div>
+
+             <div class="text">OF ALL THINGS (FEAT. <br> TOO$HORT) TOP 100 UK <br> <small> 201.301 listeners</small> </div>
+
+         </li>
+
+         <li class="fo-sup m-bottom-10">
+
+            <div class="num">2</div>
+
+            <div class="text">OF ALL THINGS (FEAT. <br> TOO$HORT) TOP 100 UK <br> <small> 201.301 listeners</small> </div>
+
+        </li>
+
+        <li class="fo-sup m-bottom-10">
+
+            <div class="num">3</div>
+
+            <div class="text">OF ALL THINGS (FEAT. <br> TOO$HORT) TOP 100 UK <br> <small> 201.301 listeners</small> </div>
+
+        </li>
+
+        </ul>
+
+        
+
+        </div>
+
+        <div class="col-md-4 footerbox">
+
+          <div class="col-12">
+
+            <div class="col-12"><h5 class="text-center m-bottom fo-heading"> FEATURED ARTIST</h5></div>
+
+                  <div class="foobox1 m-bottom-10">
+
+               <a  href="gill-info.html"  class="img" > <img src="img/singers/gill/gill-4.jpg" alt=""></a>
+
+               <div class="fo-artist-info">
+
+                   <h5>Amrinder Gill <br> Singer</h5>
+
+                   <span class="" style="color: var(--dk-red);">  ( Albums On Sale) </span>
+
+            </div>
+
+                    </div>
+
+                    <div class="foobox1 m-bottom-10">
+
+                        <a href="atif-info.html"   class="img"> <img src="img/singers/atif/atif-15.jpg" alt=""></a>
+
+                        <div class="fo-artist-info">
+
+                            <h5>Atif Aslam <br> Singer</h5>
+
+                            <span class="" style="color: var(--dk-red);">  ( Albums On Sale) </span>
+
+                     </div>
+
+                             </div>
+
+                             <div class="foobox1 m-bottom-10">
+
+                                <a href="nusrat.info.html"   class="img"> <img src="img/singers/nusrat/nusrat-5.jpg" alt=""></a>
+
+                                <div class="fo-artist-info">
+
+                                    <h5>Nurat Fathe Ali <br> Singer </h5>
+
+                                    <span class="" style="color: var(--dk-red);">  ( Albums On Sale) </span>
+
+                             </div>
+
+                                     </div>
+
+  
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 footerbox">
+
+          
+
+            <h5 class="text-center fo-heading" >CONTACT US</h5>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati sed nesciunt veniam sapiente nam reprehenderit qui est deserunt ipsa aspernatur?</p>
+
+        <div class="foobox">
+
+          <ul class="footer-items">
+
+            <li class="footer-item"><i class="fab fa-facebook-f"></i>Facebook</li>
+
+            <li class="footer-item"><i class="fab fa-instagram"></i>Instagram</li>
+
+            <li class="footer-item"><i class="fab fa-whatsapp"></i>+92-321-123456</li>
+
+            <li class="footer-item"><i class="fas fa-envelope"></i>info@gmail.con</li>
+
+            <li class="footer-item"><i class="fas fa-location"></i>flat # 204 shahar-e-fiasal Road  North Karachi </li>
+
+
+
+          </ul>
+
+        </div>
+
+        </div>
+
+
+
+    </div>
+
+    <hr >
+
+    <div class="row last-footer " >
+
+      <div class="col-md-4 shop py-3">
+
+        <i class="fab fa-cc-visa"></i>
+
+        <i class="fab fa-cc-paypal"></i>
+
+        <i class="fab fa-cc-mastercard"></i>
+
+        <i class="fab fa-cc-discover"></i>
+
+        <i class="fab fa-cc-amex"></i>  
+
+        <i class="fab fa-google-wallet"></i>
+
+      </div>
+
+      <div class="col-md-4 py-3">
+
+        <div class="email">
+
+          <input type="email" required placeholder="Enter email ">
+
+          <div class="subscribe">
+
+            
+
+            <button  ><i class="fas fa-arrow-right"></i></button>
+
+          </div>
+
+        
+
+      </div>
+
+    
+
+    </div>
+
+    <div class="col-md-4  py-3">
+
+      <p style="color: #ffff;">2021-Ecommerce <i class="far fa-copyright"></i>Software by prestaShop"</p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="bootstrap/bootstap.jquries.js" ></script>
+
+<script src="bootstrap/js/bootstrap.min.js" ></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/myaudio.js"></script>
+
+</body>
+
+</html>

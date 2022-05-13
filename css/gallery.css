@@ -1,0 +1,78 @@
+.font    i:hover{
+    color: grey !important;
+    transition: 0.5s;
+}
+.font:hover i{
+    color: red !important;
+}
+.sale-product{
+display: flex;
+padding: 0;
+         height: 350px;
+
+         z-index: 1;
+}
+.sale-product  .singer-img{
+width: 50%;
+    height: 100%;
+transition: 0.5s;
+z-index: 2;
+}
+.singer-img img{
+width: 100%;
+height: 100%;
+}
+.sale-product:hover .singer-img img{
+filter: grayscale(100%);
+}
+
+ .sale-product-img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    z-index: 8;
+    transform:skewY(-5deg)  translate(-50% , -50%);
+transition: 0.5s;
+}
+.sale-product:hover .sale-product-img {
+    transform: translateX(0);
+    left: 0%;
+}
+.sale-product-img img{
+    width: 100%;
+    height: 100%;
+}
+  
+
+.sale-product  .sale-info{
+width: 50%;
+height: 100%;
+color:var(--dark);
+position: relative;
+z-index: 0;
+position: absolute;
+transition: 0.7s;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 2px solid var(--dark);
+border-top: none ;
+border-left: none ;
+opacity: 0;
+}
+.sale-product:hover .sale-info{
+transform: translateX(100% );
+opacity: 1;
+z-index: 10;
+
+}
+
+.sale-info .btn{
+position: absolute;
+bottom: 5%;
+}

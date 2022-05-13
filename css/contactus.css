@@ -1,0 +1,98 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif
+}
+.cont
+{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+background: url(../img/pexels-tima-miroshnichenko-5118500.jpg) 0 0 no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+.content
+{
+    padding-top:30px;
+    padding-left:100px;
+    padding-right:80px;
+    color:white;
+}
+.add
+{
+    margin-bottom:50px;
+    padding:0px 80px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+.box
+{
+    display:flex;
+    align-items:center;
+}
+.icon
+{
+    min-width:60px;
+    height:60px;
+    border-radius:50%;
+    position:relative;
+    bottom:10px;
+    justify-content:center;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+}
+.text2
+{
+    margin:8px 10px;
+    display:flex;
+    flex-direction:column;
+    color:white;
+}
+.message
+{
+    margin-bottom:50px;
+    padding:40px;
+    background-color:white;
+    width:100%;
+}
+.message h2
+{
+    font-size:30px;
+    color:black;
+    font-weight:500;
+}
+.message .text1
+{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+.message .text1 .text
+{
+    padding:5px 0;
+    margin:10px 0;
+    width:100%;
+    resize:none;
+    outline:none;
+    border:none;
+    border-bottom:2px black solid;
+}
+.message .text .tag
+{
+    position:absolute;
+    left:0px;
+    padding:5px 0;
+    margin:10px 0;
+    transition:0.5s;
+}
+.message .text1 .text:focus ~ span,
+.message .text1 .text:valid ~ span
+{
+    color:brown;
+    transform:translateY(-20px);
+}

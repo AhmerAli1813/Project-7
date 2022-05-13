@@ -1,0 +1,346 @@
+
+.overflow{
+    overflow: hidden;
+    z-index: 0;
+}
+ul{
+    padding: 0;
+}
+.artist-left{
+    height: 1050px;
+
+}
+
+.artist-right{
+    height: 1050px;
+    background: url(../img/white3.jpg) 0 0 no-repeat ;
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+}
+.artist-left .artist-img{
+    height: 250px;
+    
+    padding: 0;
+    /* box-shadow:  5px 8px  10px rgba(0,0,0,0.5) ; */
+}
+.artist-img img{
+    width: 100%;
+    height: 100%;}
+.artist-detail {
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.artist-detail::before{
+content: "";
+position: absolute;
+width: 30%;
+height: 30%;
+border-top: 2px solid red;
+border-left: 2px solid red;
+top: 0;
+left: 0;
+}
+
+.artist-detail::after{
+content: "";
+position: absolute;
+width: 30%;
+height: 30%;
+border-bottom: 2px solid red;
+border-right: 2px solid red;
+bottom:  0;
+right: 0;
+}
+.artist-socail-icons{
+    float: left !important;
+    position: absolute;
+    bottom: 0;
+
+}
+.artist-socail-icons .btn {
+    float: left !important;
+position: absolute;
+bottom: 0;
+left: -100%;
+}
+
+.artist-socail-icons .icons{
+    float: right;
+    width:80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ margin-bottom: 20px;
+    transform: translate(50%);
+}
+ 
+.icons i {
+    margin-left:5px ;
+    font-size: 18px;
+cursor: pointer;    
+}
+ i:hover{
+    color: red !important;
+    transform: scale(1.1) !important;
+}
+.cat-product{
+    padding: 0;
+    width: 100%;
+    height: 75px;
+margin-bottom:20px ;
+    display: flex;
+    
+    
+}
+ .cat-product  .cat-img{
+    width: 30%;
+    height: 100%;
+margin-right: 15px;
+}
+.cat-product h6{
+    margin: 0;
+    padding: 0;
+}
+.cat-img img{
+    width: 100%;
+    height: 100%;
+}
+.our-album{
+height: 350px;
+border: 1px solid black;
+/* padding: 0; */
+/* margin: 0; */
+z-index: -1;
+
+}
+.up-box{
+    width: 100%;
+    height: 80%;
+ 
+    display: flex;
+}
+.down-box{
+    width: 100%;
+    height: 20%;
+
+    position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+
+}
+.down-box i  {
+    font-size: 20px !important;
+    margin-left: 20px;
+    color: black;
+    
+}
+
+.left-box{
+    width: 80%;
+    height: 100%;
+    background-image: URL(
+        "../img/pexels-sound-on-3757035-removebg-preview.png");
+background-size: cover;
+background-position: center;
+    position: relative;
+    background-color:white;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: 0.8s ease;
+    transform: translate(-0% , -5%) ;
+border-radius: 5%;
+}
+
+.our-album:hover .left-box{
+    transform: translate(-10% , -10%) ;
+    
+}
+.left-box::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    bottom: 0;
+    right: -50%;
+    transform: translate(15% , 15%);
+transition: 0.9s;
+}
+.left-box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s ease-in;
+
+        
+}
+.our-album:hover .left-box::after{
+    right: 0;
+}
+
+.our-album:hover .left-box::before{
+    opacity: 0;
+}
+.left-box img{
+    width: 100%;
+    height: 100%;
+}
+.right-box{
+    width: 50%;
+    height: 90%;
+    float: right;
+ 
+}
+.right-box .up-icons{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+}
+.now-playing{
+    color: royalblue;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+}
+.up-icons .btn{
+    padding: 2px;
+}
+
+.right-box .up-icons i.fa-heart {
+    font-size: 30px;
+    color: black;
+    float: right !important;
+    transform: translatex(100%);
+}
+.down-icons i {
+    font-size: 21px !important;
+    margin: 0 !important;
+    color: brown;
+}
+.down-icons .info{
+    width: 100%;
+height: 50%;
+text-align: left;   
+}
+.up-icons i.fas.fa-heart{
+    color: red;
+}
+.icons-active{
+    display: block;
+}
+.icons{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+}
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+cursor: pointer;
+}
+
+.right-box .playpause-track i.fa-play-circle ,i.fa-pause-circle{
+    font-size: 50px !important ;
+    transform: translatex(20%);
+    /* margin-left: 100px !important; */
+}
+.up-icons .icons-hide{
+    display: none;
+}
+.right-box .down-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-box .down-icons{
+    width: 100%;
+    height: 70%;
+ 
+}
+.prev-track,.next-track{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.prev-track::before{
+content:"" ;
+position: absolute;
+width: 150%;
+height: 150%;
+
+border-right: 2px solid rgba(0, 0, 0, 0.5);
+z-index: -1;
+transform: translate(-19% ,-6%) rotate( 10deg);
+    }
+    
+    
+
+
+.right-box i{
+    float: right;
+    margin-right: 50%;
+    font-size: 25px;
+    color: red;
+}
+.seek-bar-container{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#playlist{
+    width: 80%;
+    height: 350px;
+    position: absolute;
+background-color: white;
+z-index: 5;
+top: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+
+transition: 0.5s;
+
+}
+@media (max-width:576px) {
+ .our-album{
+     margin-bottom: 50px;
+ }
+    
+    
+}
